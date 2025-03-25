@@ -1,0 +1,22 @@
+version = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "repl-nix-workspace"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "yt-dlp" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "yt-dlp", specifier = ">=2025.3.25" }]
+
+[[package]]
+name = "yt-dlp"
+version = "2025.3.25"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/a2/7b89b34081f2ec88ba6cde546dcb389001f5df44eeb540793b1eb68e615f/yt_dlp-2025.3.25.tar.gz", hash = "sha256:c7f42516f9df31daef53cca2590239401cf31db7c4eaca67667cfd82f2e0ae27", size = 2961711 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e2/e3/21d43c490e55238659e3c57e06f850022a4c5e450541e38837d7474fdfb8/yt_dlp-2025.3.25-py3-none-any.whl", hash = "sha256:939cd8cc0a4bb5d090cd4dbda6e4361b634a4afe6e50c7f11e9f5431b4fcbe8e", size = 3221241 },
+]
